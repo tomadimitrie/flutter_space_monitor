@@ -1,7 +1,7 @@
 name: flutter_space_monitor
 description: A new flutter plugin project.
 version: 0.0.1
-author: "Dimitrie-Toma Furdui"
+author: "Dimitrie-Toma Furdui <tomadimitrie@icloud.com>"
 homepage: "https://github.com/tomadimitrie/flutter_space_monitor"
 
 environment:
