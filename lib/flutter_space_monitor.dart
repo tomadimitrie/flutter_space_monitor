@@ -11,7 +11,7 @@ class FlutterSpaceMonitor {
     return version;
   }
 
-  static Future<double> get availableSpace async {
+  static Future<dynamic> get availableSpace async {
     return _channel.invokeMethod('getAvailableSpace');
   }
 
