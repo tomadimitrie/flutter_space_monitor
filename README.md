@@ -22,5 +22,5 @@ import 'package:flutter_space_monitor/flutter_space_monitor.dart';
 Use it:
 
 ```dart
-final space = await FlutterSpaceMonitor.availableSpace;
+final space = await FlutterSpaceMonitor.availableSpace; // returns available space in bytes
 ```
