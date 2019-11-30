@@ -1,5 +1,8 @@
 # Flutter Space Monitor
 
+[![pub package](https://img.shields.io/pub/v/flutter_space_monitor.svg)](https://pub.dartlang.org/packages/flutter_space_monitor)
+
+
 A Flutter plugin that reports the available space on the device
 Works with iOS and Android
 
