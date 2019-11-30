@@ -25,3 +25,7 @@ Fixed NSNumber bug
 # 0.0.7
 
 Forgot to remove the previous function
+
+# 0.0.8
+
+Updated README
