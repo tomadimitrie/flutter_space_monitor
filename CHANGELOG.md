@@ -18,14 +18,14 @@ Fixed method not implemented bug
 
 Fixed wrong size showing up
 
-# 0.0.6
+## 0.0.6
 
 Fixed NSNumber bug
 
-# 0.0.7
+## 0.0.7
 
 Forgot to remove the previous function
 
-# 0.0.8
+## 0.0.8
 
 Updated README
