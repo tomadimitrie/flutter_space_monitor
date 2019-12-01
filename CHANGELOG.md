@@ -29,3 +29,11 @@ Forgot to remove the previous function
 ## 0.0.8
 
 Updated README
+
+## 0.0.9
+
+Fixed Android build error
+
+## 1.0.0
+
+All should be working now

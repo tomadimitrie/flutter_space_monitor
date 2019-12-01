@@ -1,4 +1,4 @@
-package com.example.flutterspacemonitor;
+package com.toma.flutter_space_monitor;
 
 import android.os.Environment;
 import android.os.StatFs;
@@ -21,19 +21,18 @@ public class FlutterSpaceMonitorPlugin implements MethodCallHandler {
 
   @Override
   public void onMethodCall(MethodCall call, Result result) {
-      if (call.method.equals("getPlatformVersion")) {
-          result.success("Android " + android.os.Build.VERSION.RELEASE);
-      } else if (call.method.equals("getAvailableSpace")) {
-          result.success(megabytesAvailable());
-      } else {
+    if (call.method.equals("getPlatformVersion")) {
+      result.success("Android " + android.os.Build.VERSION.RELEASE);
+    } else if (call.method.equals("getAvailableSpace")) {
+      result.success(megabytesAvailable());
+    } else {
       result.notImplemented();
     }
   }
 
-  public float megabytesAvailable() {
+  public long megabytesAvailable() {
     StatFs stat = new StatFs(Environment.getExternalStorageDirectory().getPath());
-    long bytesAvailable = (long)stat.getBlockSize() *(long)stat.getBlockCount();
-    long megAvailable = bytesAvailable / 1048576;
-    return megAvailable;
+    long bytesAvailable = (long) stat.getBlockSize() * (long) stat.getBlockCount();
+    return bytesAvailable;
   }
 }
